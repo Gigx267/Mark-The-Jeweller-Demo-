@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Collections | Mark Christopher — High Jewelry & Bespoke Icons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .gold-accent {
+            color: #bf953f;
+        }
+        .gold-border {
+            border: 1px solid rgba(191, 149, 63, 0.3);
+        }
+        .gold-border-bottom {
+            border-bottom: 1px solid rgba(191, 149, 63, 0.4);
+        }
+        .bg-studio-dark {
+            background-color: #050505;
+        }
+        .hover-gold-scale {
+            transition: all 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+        .collection-card {
+            transition: transform 0.5s ease, box-shadow 0.4s ease;
+        }
+        .collection-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 35px -15px rgba(0,0,0,0.8);
+        }
+        .mask-radial {
+            mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
+            -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
+        }
+        .text-stroke-gold {
+            text-shadow: 0 0 8px rgba(191,149,63,0.3);
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #bf953f;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- Navigation (consistent with the portfolio) -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-5 flex justify-between items-center">
+            <div class="text-2xl tracking-[0.3em] font-light serif uppercase">
+                <img style="height: 1.9rem;" src="py (1).jpg" alt="Mark Christopher insignia">
+            </div>
+            <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.4em] uppercase font-light">
+                <a href="index.html" class="hover:text-gold-accent transition duration-300 text-white/70">Home</a>
+                <a href="about.html" class="hover:text-gold-accent transition duration-300">About</a>
+            
+                <a href="jeweller.html" class="hover:text-gold-accent transition duration-300">The Jeweller</a>
+            </div>
+            <div class="text-[10px] tracking-[0.3em] uppercase border border-white/30 rounded-none px-4 py-2 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
+                Book Consultation
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Collections introduction -->
+    <section class="relative pt-44 pb-28 md:pt-56 md:pb-36 bg-black overflow-hidden" style="background-image:url('py (13).jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-3 mb-6">
+                <span class="w-8 h-px bg-[#bf953f]/60"></span>
+                <span class="text-[10px] tracking-[0.5em] uppercase text-[#bf953f] font-light">The Archive</span>
+                <span class="w-8 h-px bg-[#bf953f]/60"></span>
+            </div>
+            <h1 class="serif text-6xl md:text-8xl font-light italic tracking-wide mb-6">
+                Curated <span class="not-italic font-normal">Collections</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-white/50 text-sm leading-loose tracking-wide font-light">
+                From sculptural high jewelry to everyday icons — each line embodies the maison’s signature: rare stones, hand-forged settings, and uncompromised artistry.
+            </p>
+            <div class="flex justify-center gap-4 mt-10">
+                <div class="w-12 h-px bg-white/20"></div>
+                <div class="w-12 h-px bg-[#bf953f]/40"></div>
+                <div class="w-12 h-px bg-white/20"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Grid: Main Showcase with 5 signature lines -->
+    <section class="bg-studio-dark py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <!-- Collection 1: Signature "Iced Out" high jewelry -->
+            <div class="mb-32 md:mb-40 collection-card group">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="uppercase text-[10px] tracking-[0.4em] text-[#bf953f] mb-3">— Iconic House</div>
+                        <h2 class="serif text-5xl md:text-6xl italic font-light mb-6 tracking-tight">The Lumière <br>Collection</h2>
+                        <div class="w-16 h-px bg-white/20 my-5"></div>
+                        <p class="text-white/50 text-sm leading-relaxed font-light mb-8">Sculptural diamond suites and high-carat gold masterpieces. Inspired by the golden hour over Abuja, each piece features old-mine cushion cuts and invisible pave settings. Made for the discerning few who seek brilliance without echo.</p>
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">18K Gold / Platinum</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">GIA certified diamonds</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Bespoke available</span>
+                        </div>
+                        <a href="#" class="inline-block mt-8 text-[10px] tracking-[0.3em] uppercase border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">Discover Lumière →</a>
+                    </div>
+                    <div class="order-1 md:order-2 relative overflow-hidden gold-border rounded-sm">
+                        <img src="py (2).jpg" class="w-full h-auto object-cover group-hover:scale-105 transition duration-700" alt="Lumière diamond necklace">
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 text-[8px] tracking-wider uppercase">High Jewelry</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collection 2: Aether (colored gemstones & nature) -->
+            <div class="mb-32 md:mb-40 collection-card group">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-1 md:order-2 relative overflow-hidden gold-border rounded-sm">
+                        <img src="py (12).jpg" class="w-full h-auto object-cover group-hover:scale-105 transition duration-700" alt="Aether sapphire ring">
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 text-[8px] tracking-wider uppercase">Gemstone Atelier</div>
+                    </div>
+                    <div class="order-2 md:order-1 text-right md:text-left">
+                        <div class="uppercase text-[10px] tracking-[0.4em] text-[#bf953f] mb-3">— chromatic poetry</div>
+                        <h2 class="serif text-5xl md:text-6xl italic font-light mb-6 tracking-tight">Aether</h2>
+                        <div class="w-16 h-px bg-white/20 my-5"></div>
+                        <p class="text-white/50 text-sm leading-relaxed font-light mb-8">A vivid exploration of ethically sourced sapphires, emeralds, and Paraiba tourmalines. Organic silhouettes and fluid lines pay homage to the flowing dunes and celestial skies. Each stone is hand-selected for unrivaled saturation.</p>
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Tsavorites · Rubies</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">One-of-a-kind</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Investment grade</span>
+                        </div>
+                        <a href="#" class="inline-block mt-8 text-[10px] tracking-[0.3em] uppercase border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">Explore Aether →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collection 3: "The Noir" men's & unisex line -->
+            <div class="mb-32 md:mb-40 collection-card group">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="uppercase text-[10px] tracking-[0.4em] text-[#bf953f] mb-3">— Avant-Garde Masculine</div>
+                        <h2 class="serif text-5xl md:text-6xl italic font-light mb-6 tracking-tight">Noir Essence</h2>
+                        <div class="w-16 h-px bg-white/20 my-5"></div>
+                        <p class="text-white/50 text-sm leading-relaxed font-light mb-8">Bold, minimal, yet profoundly intricate. Black ceramic, forged carbon, baguette diamonds, and rose gold accents define this gender-fluid collection. From signet rings to convertible pendant brooches, Noir Essence redefines modern heirloom.</p>
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Limited edition</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Carbon & titanium</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Free engraving</span>
+                        </div>
+                        <a href="#" class="inline-block mt-8 text-[10px] tracking-[0.3em] uppercase border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">Shop Noir →</a>
+                    </div>
+                    <div class="order-1 md:order-2 relative overflow-hidden gold-border rounded-sm">
+                        <img src="py (1).jpg" class="w-full h-auto object-cover group-hover:scale-105 transition duration-700 brightness-110" alt="Noir Essence carbon ring">
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 text-[8px] tracking-wider uppercase">Unisex Icons</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collection 4: Bridal & Engagement (bespoke focus) -->
+            <div class="mb-24 md:mb-32 collection-card group">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-1 md:order-2 relative overflow-hidden gold-border rounded-sm">
+                        <img src="py (5).jpg" class="w-full h-auto object-cover group-hover:scale-105 transition duration-700" alt="Bespoke engagement ring">
+                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 text-[8px] tracking-wider uppercase">Étienne Bridal</div>
+                    </div>
+                    <div class="order-2 md:order-1 text-right md:text-left">
+                        <div class="uppercase text-[10px] tracking-[0.4em] text-[#bf953f] mb-3">— Love Immortalized</div>
+                        <h2 class="serif text-5xl md:text-6xl italic font-light mb-6 tracking-tight">Étienne</h2>
+                        <div class="w-16 h-px bg-white/20 my-5"></div>
+                        <p class="text-white/50 text-sm leading-relaxed font-light mb-8">Beyond the traditional — eternity rings, secret halos, and vintage-inspired solitaires. Our bridal atelier offers fully bespoke engagement experiences with conflict-free diamonds and a private stone sourcing journey.</p>
+                        <div class="flex items-center gap-4 flex-wrap">
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Custom design</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Lab & natural</span>
+                            <span class="text-[11px] border border-white/20 px-4 py-1.5 rounded-sm">Heirloom promise</span>
+                        </div>
+                        <a href="#" class="inline-block mt-8 text-[10px] tracking-[0.3em] uppercase border-b border-[#bf953f] pb-1 hover:text-[#bf953f] transition">Bridal consultation →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight: BESPOKE atelier (special service) -->
+    <section class="relative py-28 px-6 bg-black border-y border-white/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-20 bg-[#bf953f]/30"></div>
+            <span class="text-[9px] tracking-[0.5em] uppercase text-[#bf953f]">Beyond the catalogue</span>
+            <h3 class="serif text-5xl md:text-7xl italic font-light mt-5 mb-8">The Bespoke <br>Commission</h3>
+            <p class="max-w-2xl mx-auto text-white/40 text-sm leading-relaxed">Every Mark Christopher collection is a starting point. Our private atelier invites you to co-create heirlooms from your imagination — translate memories into gemstones, initials into hidden details.</p>
+            <div class="flex justify-center gap-5 mt-12">
+                <div class="w-16 h-px bg-white/20"></div>
+                <a href="#" class="text-[10px] tracking-[0.3em] uppercase border border-[#bf953f]/50 px-8 py-3 hover:bg-[#bf953f] hover:text-black transition">Start your commission</a>
+                <div class="w-16 h-px bg-white/20"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature materials + craftsmanship highlights (grid) -->
+    <section class="bg-studio-dark py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h4 class="serif text-3xl md:text-4xl italic font-light">Hallmarks of distinction</h4>
+                <div class="w-12 h-px bg-[#bf953f]/50 mx-auto my-5"></div>
+                <p class="text-white/40 text-xs">Only the world’s finest materials earn the Mark Christopher seal</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 gold-border rounded-sm bg-black/40">
+                    <div class="text-3xl mb-3">⚜️</div>
+                    <h5 class="text-[11px] uppercase tracking-wider font-semibold">18K Fairmined Gold</h5>
+                    <p class="text-white/30 text-[9px] mt-2">Ethical origins · Recycled & traceable</p>
+                </div>
+                <div class="p-6 gold-border rounded-sm bg-black/40">
+                    <div class="text-3xl mb-3">💎</div>
+                    <h5 class="text-[11px] uppercase tracking-wider font-semibold">Diamond GFCO Standard</h5>
+                    <p class="text-white/30 text-[9px] mt-2">Color D-F · IF-VS clarity exclusively</p>
+                </div>
+                <div class="p-6 gold-border rounded-sm bg-black/40">
+                    <div class="text-3xl mb-3">🖋️</div>
+                    <h5 class="text-[11px] uppercase tracking-wider font-semibold">Hand Engraving</h5>
+                    <p class="text-white/30 text-[9px] mt-2">Signature micro-relief details</p>
+                </div>
+                <div class="p-6 gold-border rounded-sm bg-black/40">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h5 class="text-[11px] uppercase tracking-wider font-semibold">Lifetime Care</h5>
+                    <p class="text-white/30 text-[9px] mt-2">Polishing · Inspection · insurance liaison</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial gallery: Recent icons / limited releases -->
+    <section class="py-20 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap justify-between items-end border-b border-white/10 pb-6 mb-12">
+                <div>
+                    <span class="text-[10px] tracking-[0.4em] uppercase text-white/40">Limited drops</span>
+                    <h3 class="serif text-4xl italic mt-2">Recent Icons</h3>
+                </div>
+                <a href="#" class="text-[9px] uppercase tracking-wider border-b border-white/30 pb-1 hover:text-[#bf953f] transition">View archive →</a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="py (13).jpg" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f]">SOLD OUT</p>
+                        <p class="text-sm serif">Lumière Cuff · 46 brilliant diamonds</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="py (5).jpg" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110 brightness-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f]">LAST PIECE</p>
+                        <p class="text-sm serif">Noir Essence · octagonal carbon ring</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="py (1).jpg" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f]">MADE TO ORDER</p>
+                        <p class="text-sm serif">Aether earrings · 4ct tourmaline pair</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concierge + Showroom location -->
+    <section class="bg-[#050505] py-20 px-6 border-y border-white/5 my-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <span class="w-8 h-px bg-[#bf953f]"></span>
+                    <span class="text-[9px] tracking-[0.5em] uppercase">Private Salon</span>
+                </div>
+                <p class="text-sm text-white/50 mt-3 max-w-md">Mall of Dubai, Gimbiya Street<br>Area 11, Garki, Abuja, Nigeria</p>
+                <p class="text-xs text-white/30 mt-2">By appointment only · +234 906 000 7788</p>
+            </div>
+            <div class="h-12 w-px bg-white/10 hidden md:block"></div>
+            <div class="flex gap-6">
+                <div class="text-right">
+                    <span class="text-[9px] uppercase tracking-wider text-white/40">Press & Inquiries</span>
+                    <p class="text-xs font-light">concierge@markchristopher.com</p>
+                </div>
+                <div class="text-right">
+                    <span class="text-[9px] uppercase tracking-wider text-white/40">Virtual Showroom</span>
+                    <p class="text-xs font-light">Zoom / WhatsApp consultations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (consistent) -->
+    <footer class="bg-black/90 border-t border-white/5 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <img style="height: 2rem;" src="py (1).jpg" alt="Mark Christopher">
+                <span class="text-[9px] tracking-[0.4em] uppercase text-white/30">Mark Christopher Ltd · mmxxv</span>
+            </div>
+            <div class="flex gap-8 text-[9px] tracking-[0.2em] uppercase text-white/30">
+                <a href="#" class="hover:text-white/80">Privacy</a>
+                <a href="#" class="hover:text-white/80">Ethics</a>
+                <a href="#" class="hover:text-white/80">Returns</a>
+                <a href="#" class="hover:text-white/80">Client Care</a>
+            </div>
+            <div class="text-[8px] tracking-wider text-white/20">
+                Bespoke Fine Jewelry — since MMXXIV
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Prevents any link default action for placeholder routes
+        document.querySelectorAll('a[href="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('Navigate to complete experience — Mark Christopher Atelier');
+            });
+        });
+    </script>
+</body>
+</html>

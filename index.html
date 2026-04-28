@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Christopher Luxury | Bespoke Fine Jewelry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+        }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+
+        .hero-bg {
+            background:
+                linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,1) 100%),
+                url('./py (13).jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gold-border {
+            border: 1px solid rgba(191, 149, 63, 0.3);
+        }
+
+        .text-kern { tracking: 0.3em; }
+
+        .animate-nav,
+        .animate-fade-in-up,
+        .animate-zoom-fade,
+        .animate-slide-in-left,
+        .animate-slide-in-right {
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(24px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            0% { opacity: 0; transform: scale(0.92); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideInLeft {
+            0% { opacity: 0; transform: translateX(-40px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            0% { opacity: 0; transform: translateX(40px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInDown {
+            0% { opacity: 0; transform: translateY(-32px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-nav { animation: slideInDown 0.9s ease-out forwards; }
+        .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+        .animate-fade-in-up.delay-200 { animation-delay: 0.2s; }
+        .animate-fade-in-up.delay-400 { animation-delay: 0.4s; }
+        .animate-fade-in-up.delay-600 { animation-delay: 0.6s; }
+        .animate-fade-in-up.delay-800 { animation-delay: 0.8s; }
+        .animate-zoom-fade { animation: zoomIn 1s ease-out forwards; }
+        .animate-zoom-fade.delay-1000 { animation-delay: 1s; }
+        .animate-slide-in-left { animation: slideInLeft 1s ease-out forwards; }
+        .animate-slide-in-right { animation: slideInRight 1s ease-out forwards; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 mix-blend-difference animate-nav">
+        <div class="max-w-7xl mx-auto px-8 py-8 flex justify-between items-center">
+            <div class="text-2xl tracking-[0.3em] font-light serif uppercase">
+              <img style="height: 2cm;" src="py (1).jpg" alt="" srcset="">
+            </div>
+            <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.4em] uppercase font-light">
+                <a href="about.html" class="hover:text-gray-400 transition">About </a>
+                <a href="collections.html" class="hover:text-gray-400 transition">Collections</a>
+                <a href="Jeweller.html" class="hover:text-gray-400 transition">The Jeweller</a>
+            </div>
+            <a href="consultation.html" class="text-[10px] tracking-[0.3em] uppercase border-b border-white/30 pb-1 cursor-pointer hover:border-white transition">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center hero-bg">
+        <div class="relative z-10 text-center px-6">
+            <div class="overflow-hidden">
+                <h2 class="text-[10px] uppercase tracking-[0.8em] mb-6 text-white/60 animate-fade-in-up delay-200">Authentic Luxury Jewelry</h2>
+            </div>
+
+            <h1 class="text-7xl md:text-9xl serif italic font-light mb-6 tracking-tight animate-fade-in-up delay-400">
+                Mark Does It <span class="not-italic font-normal">Better</span>
+            </h1>
+
+            <p class="max-w-lg mx-auto text-xs font-light opacity-50 leading-relaxed mb-12 tracking-[0.1em] animate-fade-in-up delay-600">
+                Mall of Dubai Gimbiya Street Area 11 Garki, Abuja, Nigeria
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center animate-zoom-fade delay-1000">
+                <a href="#" class="group relative px-12 py-4 overflow-hidden gold-border transition-all hover:bg-white hover:text-black">
+                    <span class="relative z-10 text-[10px] uppercase tracking-[0.3em]">Explore Pieces</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 left-12 hidden lg:block animate-slide-in-left">
+            <p class="text-[9px] uppercase tracking-[0.5em] text-white/30 [writing-mode:vertical-lr]">Established MMXXIV</p>
+        </div>
+    </section>
+
+    <section class="bg-black py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-8 bg-[#080808] h-[600px] relative overflow-hidden group animate-fade-in-up delay-200">
+                    <img src="py (5).jpg" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" alt="Iced Out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-12 left-12">
+                        <h3 class="text-3xl serif mb-2">The Custom Gallery</h3>
+                        <P class="text-[10px] tracking-[0.2em] uppercase text-white/40" >  we create crafts that matches your personality</P>
+                        <a href="consultation.html" class="text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition">Speak With Us</a>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-4 flex flex-col gap-6">
+                    <div class="h-1/2 bg-[#080808] p-12 flex flex-col justify-center border border-white/5 animate-slide-in-left">
+                        <h4 class="text-xl serif italic mb-4">Precision Craft</h4>
+                        <p class="text-xs font-light text-white/50 leading-loose">Every stone is hand-selected and verified for maximum fire and brilliance.</p>
+                    </div>
+                    <div class="h-1/2 bg-white text-black p-12 flex flex-col justify-between animate-slide-in-right">
+                        <span class="text-2xl serif italic">01.</span>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-widest font-bold mb-2">Book Consultation</h4>
+                            <p class="text-[11px] leading-relaxed">Book a session at our private Abuja studio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Editorial gallery: Recent icons / limited releases -->
+    <section class="py-20 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap justify-between items-end border-b border-white/10 pb-6 mb-12">
+                <div>
+                    <span class="text-[10px] tracking-[0.4em] uppercase text-white/40">Shop by category</span>
+                    <h3 class="serif text-4xl italic mt-2">Categories</h3>
+                </div>
+                <a href="#" class="text-[9px] uppercase tracking-wider border-b border-white/30 pb-1 hover:text-[#bf953f] transition">View all pieces →</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="py (3).jpg" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f] uppercase">Watches</p>
+                        <p class="text-sm serif">Timeless mechanical and modern luxury timepieces.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="py (12).jpg" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110 brightness-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f] uppercase">Necklaces</p>
+                        <p class="text-sm serif">Signature chains, pendants, and bespoke neck adornments.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="py (7).jpg" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f] uppercase">Earrings</p>
+                        <p class="text-sm serif">Elegant studs, hoops, and statement ear pieces.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden gold-border">
+                    <img src="vtx.png" class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5">
+                        <p class="text-[8px] tracking-[0.2em] text-[#bf953f] uppercase">Bracelets</p>
+                        <p class="text-sm serif">Classic cuffs, bangles, and custom wrist pieces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concierge + Showroom location -->
+    <section class="bg-[#050505] py-20 px-6 border-y border-white/5 my-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <span class="w-8 h-px bg-[#bf953f]"></span>
+                    <span class="text-[9px] tracking-[0.5em] uppercase">Private Salon</span>
+                </div>
+                <p class="text-sm text-white/50 mt-3 max-w-md">Mall of Dubai, Gimbiya Street<br>Area 11, Garki, Abuja, Nigeria</p>
+                <p class="text-xs text-white/30 mt-2">By appointment only · +234 906 000 7788</p>
+            </div>
+            <div class="h-12 w-px bg-white/10 hidden md:block"></div>
+            <div class="flex gap-6">
+                <div class="text-right">
+                    <span class="text-[9px] uppercase tracking-wider text-white/40">Press & Inquiries</span>
+                    <p class="text-xs font-light">concierge@markchristopher.com</p>
+                </div>
+                <div class="text-right">
+                    <span class="text-[9px] uppercase tracking-wider text-white/40">Virtual Showroom</span>
+                    <p class="text-xs font-light">Zoom / WhatsApp consultations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

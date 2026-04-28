@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Mark Christopher Luxury — The Atelier Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .gold-border {
+            border: 1px solid rgba(191, 149, 63, 0.35);
+        }
+        .gold-text {
+            color: #bf953f;
+        }
+        .bg-dark-charcoal {
+            background-color: #070707;
+        }
+        .bg-deep-black {
+            background-color: #020202;
+        }
+        .subtle-shadow {
+            box-shadow: 0 25px 35px -12px rgba(0,0,0,0.85);
+        }
+        .hover-gold-glow {
+            transition: all 0.4s ease;
+        }
+        .hover-gold-glow:hover {
+            box-shadow: 0 0 18px rgba(191, 149, 63, 0.2);
+            border-color: rgba(191, 149, 63, 0.6);
+        }
+        .stat-divider {
+            background: linear-gradient(90deg, rgba(191,149,63,0) 0%, rgba(191,149,63,0.6) 50%, rgba(191,149,63,0) 100%);
+            height: 1px;
+        }
+        .texture-overlay {
+            background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* animation utilities */
+        .will-animate {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.9s ease, transform 0.9s ease;
+            will-change: opacity, transform;
+        }
+        .animate-fade-up { transform: translateY(28px); }
+        .animate-fade-down { transform: translateY(-24px); }
+        .animate-fade-left { transform: translateX(-32px); }
+        .animate-fade-right { transform: translateX(32px); }
+        .animate-zoom-in { transform: scale(0.96); }
+        .animate-visible {
+            opacity: 1;
+            transform: translate(0,0) scale(1);
+        }
+        .animate-delay-1 { transition-delay: 0.12s; }
+        .animate-delay-2 { transition-delay: 0.24s; }
+        .animate-delay-3 { transition-delay: 0.36s; }
+        .animate-delay-4 { transition-delay: 0.48s; }
+    </style>
+</head>
+<body class="texture-overlay">
+
+    <nav class="fixed w-full z-50 bg-black/70 backdrop-blur-sm border-b border-white/5 will-animate animate-fade-down animate-delay-1">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-5 flex justify-between items-center">
+            <div class="text-2xl tracking-[0.3em] font-light serif uppercase">
+                <img style="height: 1.9rem;" src="py (1).jpg" alt="Mark Christopher crest">
+            </div>
+            <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.4em] uppercase font-light">
+                <a href="index.html" class="hover:text-[#bf953f] transition duration-300">Home</a>
+                <a href="collections.html" class="hover:text-[#bf953f] transition duration-300">Collections</a>
+                <a href="jeweller.html" class="hover:text-[#bf953f] transition duration-300">The Jeweller</a>
+            </div>
+            <div class="text-[10px] tracking-[0.3em] uppercase border border-white/30 rounded-none px-4 py-2 hover:bg-white hover:text-black transition duration-300 cursor-pointer">
+                Book Consultation
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-40 pb-28 md:pt-52 md:pb-36 overflow-hidden" style="background-image: url('./py (13).jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="absolute inset-0 bg-black/60"></div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+            <div class="inline-block mb-6 border-l-2 border-r-2 border-[#bf953f]/40 px-5 py-1 will-animate animate-fade-up animate-delay-1">
+                <span class="text-[10px] tracking-[0.5em] uppercase text-[#bf953f] font-light">Legacy in motion</span>
+            </div>
+            <h1 class="serif text-6xl md:text-8xl font-light italic tracking-wide mb-8 will-animate animate-fade-up animate-delay-2">
+                The Art of <span class="font-normal not-italic text-white">True Bespoke</span>
+            </h1>
+            <div class="max-w-2xl mx-auto will-animate animate-fade-up animate-delay-3">
+                <p class="text-white/60 text-sm leading-loose tracking-wide font-light">
+                    For over a decade, Mark Christopher has defined 
+                    uncompromising luxury — not through excess, but through absolute devotion to craft.
+                </p>
+            </div>
+            <div class="flex justify-center gap-8 mt-12 will-animate animate-fade-up animate-delay-4">
+                <div class="w-12 h-px bg-white/20"></div>
+                <div class="w-12 h-px bg-[#bf953f]/50"></div>
+                <div class="w-12 h-px bg-white/20"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-deep-black py-24 md:py-32 px-6 border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="will-animate animate-fade-right animate-delay-2">
+                    <span class="text-[#bf953f] text-xs tracking-[0.3em] uppercase block mb-4"> philosophy </span>
+                    <h2 class="serif text-5xl md:text-6xl font-light italic leading-tight mb-8">
+                        "Mark Does It Better"
+                    </h2>
+                    <div class="space-y-6 text-white/50 text-sm leading-loose font-light">
+                        <p>We don’t follow trends, we create talismans. Each Mark Christopher piece is conceived in the quiet hours of our Abuja atelier — a sanctuary for platinum, 18K gold and conflict-free diamonds. Our signature lies in invisible settings, hand-engraved hallmarks, and stones that seem to capture starlight.</p>
+                        <p>From high-jewelry commissions for discerning collectors to one-of-a-kind engagement heirlooms, we merge old world gem-cutting with contemporary Nigerian spirit. The result is jewelry that transcends geography, worn by tastemakers from Dubai to Paris.</p>
+                    </div>
+                    <div class="mt-10 flex items-center gap-6">
+                        <div class="w-12 h-[2px] bg-[#bf953f]/60"></div>
+                        <span class="text-[11px] tracking-[0.25em] uppercase text-white/40">Certified Gemological Institute</span>
+                    </div>
+                </div>
+                <div class="relative group will-animate animate-zoom-in animate-delay-3">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#bf953f]/20 to-transparent blur-xl opacity-60 group-hover:opacity-100 transition duration-700"></div>
+                    <img src="py (4).jpg" class="relative z-10 w-full h-auto object-cover shadow-2xl gold-border" alt="master jeweller at work">
+                    <div class="absolute bottom-6 left-6 bg-black/70 backdrop-blur-sm px-6 py-3 gold-border">
+                        <p class="text-[9px] tracking-[0.2em] uppercase">Hand-finished in Abuja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black py-24 md:py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h3 class="serif text-4xl md:text-5xl font-light italic mb-4 will-animate animate-fade-up animate-delay-2">Where precision meets poetry</h3>
+                <div class="stat-divider w-24 mx-auto my-6 will-animate animate-fade-up animate-delay-3"></div>
+                <p class="text-white/40 max-w-md mx-auto text-xs tracking-wide will-animate animate-fade-up animate-delay-4">Ethical sourcing. Private viewings. Lifelong heirloom care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#080808] p-10 text-center gold-border hover-gold-glow transition duration-500 will-animate animate-fade-up animate-delay-2">
+                    <div class="text-5xl serif italic text-[#bf953f] mb-3">7+</div>
+                    <div class="text-xs uppercase tracking-[0.3em] font-semibold mb-2">Years of discreet excellence</div>
+                    <div class="w-8 h-px bg-white/20 mx-auto my-4"></div>
+                    <p class="text-white/40 text-[11px] leading-relaxed">A boutique house built on private referrals and uncompromising integrity.</p>
+                </div>
+                <div class="bg-[#080808] p-10 text-center gold-border hover-gold-glow transition duration-500 will-animate animate-fade-up animate-delay-3">
+                    <div class="text-5xl serif italic text-[#bf953f] mb-3">100%</div>
+                    <div class="text-xs uppercase tracking-[0.3em] font-semibold mb-2">Traceable Gemstones</div>
+                    <div class="w-8 h-px bg-white/20 mx-auto my-4"></div>
+                    <p class="text-white/40 text-[11px] leading-relaxed">Every diamond and precious stone ethically sourced from certified partners.</p>
+                </div>
+                <div class="bg-[#080808] p-10 text-center gold-border hover-gold-glow transition duration-500 will-animate animate-fade-up animate-delay-4">
+                    <div class="text-5xl serif italic text-[#bf953f] mb-3">24/7</div>
+                    <div class="text-xs uppercase tracking-[0.3em] font-semibold mb-2">Concierge & Care</div>
+                    <div class="w-8 h-px bg-white/20 mx-auto my-4"></div>
+                    <p class="text-white/40 text-[11px] leading-relaxed">Lifetime maintenance, re-polishing and secure global delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-dark-charcoal py-28 overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#bf953f]/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-14 items-center">
+                <div class="lg:w-1/2 order-2 lg:order-1 will-animate animate-fade-right animate-delay-2">
+                    <span class="text-[#bf953f] text-[11px] tracking-[0.3em] uppercase border-l-2 border-[#bf953f] pl-4">The jeweller</span>
+                    <h3 class="serif text-5xl md:text-6xl italic font-light mt-6 mb-6 tracking-wide">Christopher <span class="text-white not-italic">Nwosu</span></h3>
+                    <div class="space-y-5 text-white/50 text-sm leading-loose font-light">
+                        <p>Third-generation lapidary artist, GIA graduate gemologist, and visionary behind the brand. Christopher began his journey as an apprentice in Antwerp before returning to Nigeria to create a maison that rejects compromise.</p>
+                        <p>“Luxury isn't loud — it’s felt in the weight of a perfectly balanced ring, the warmth of rare rose gold, and the story a gem tells when held to light.” — Mark Christopher</p>
+                        <p>Today, he personally oversees each bespoke commission, from wax carving to final polish, ensuring every creation carries the house signature: a discrete <span class="text-white/80">‘MC’</span> cipher and a hidden ruby inside each shank — a nod to intuition and passion.</p>
+                    </div>
+                    <div class="flex gap-8 mt-10">
+                        <div class="w-16 h-px bg-white/30"></div>
+                        <div class="text-[9px] tracking-[0.3em] uppercase text-white/30">Master Bench jeweller — GIA alumni</div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2 relative flex justify-center will-animate animate-zoom-in animate-delay-3">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-4 border border-[#bf953f]/20 rounded-full"></div>
+                        <img src="py (1).jpg" class="w-full h-auto rounded-full shadow-2xl object-cover border-2 border-white/10" alt="Christopher Nwosu, master jeweller">
+                        <div class="absolute -bottom-6 -right-6 bg-black gold-border p-3 backdrop-blur-sm">
+                            <span class="text-[10px] uppercase tracking-wider">Hand-signed <span class="text-[#bf953f]">☆</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black py-28 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="serif text-4xl md:text-6xl font-light italic will-animate animate-fade-up animate-delay-2">The journey of a single stone</h2>
+                <div class="w-20 h-px bg-[#bf953f]/40 mx-auto my-7 will-animate animate-fade-up animate-delay-3"></div>
+                <p class="text-white/40 max-w-xl mx-auto text-sm will-animate animate-fade-up animate-delay-4">From raw sketch to your skin — each heirloom requires hundreds of hours of dedication.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                <div class="p-8 gold-border bg-[#060606] group transition-all hover:bg-white/5 will-animate animate-fade-up animate-delay-2">
+                    <span class="text-4xl serif italic text-[#bf953f]">01.</span>
+                    <h4 class="text-base uppercase tracking-widest mt-2 mb-3">Consultation</h4>
+                    <p class="text-white/40 text-xs leading-relaxed">Private meeting at our flagship showroom in Garki, Abuja or virtual showcase. We discuss vision, vintage inspiration, and technical feasibility.</p>
+                </div>
+                <div class="p-8 gold-border bg-[#060606] group transition-all hover:bg-white/5 will-animate animate-fade-up animate-delay-3">
+                    <span class="text-4xl serif italic text-[#bf953f]">02.</span>
+                    <h4 class="text-base uppercase tracking-widest mt-2 mb-3">Gem Selection</h4>
+                    <p class="text-white/40 text-xs leading-relaxed">We present ethically sourced diamonds, sapphires, emeralds, or rare colored gems– each accompanied by laboratory certification.</p>
+                </div>
+                <div class="p-8 gold-border bg-[#060606] group transition-all hover:bg-white/5 will-animate animate-fade-up animate-delay-4">
+                    <span class="text-4xl serif italic text-[#bf953f]">03.</span>
+                    <h4 class="text-base uppercase tracking-widest mt-2 mb-3">Artisan Completion</h4>
+                    <p class="text-white/40 text-xs leading-relaxed">CAD sculpting or hand-carved wax → precious metal casting → stone setting → final quality check with lifetime assurance.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 flex flex-wrap justify-between items-center border-t border-white/10 pt-12 gap-6 will-animate animate-fade-up animate-delay-3">
+                <div class="flex gap-8 items-center">
+                    <div class="w-8 h-8 rounded-full bg-[#bf953f]/20 flex items-center justify-center text-[#bf953f] text-xs">★</div>
+                    <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Mall of Dubai, Gimbiya Street <br> Area 11, Garki, Abuja</p>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-right">
+                        <span class="text-[10px] block tracking-wider text-white/50">By appointment only</span>
+                        <span class="text-[#bf953f] text-xs font-light tracking-wider">+234 (0) 906 000 7788</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-[#030303]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                <div class="relative h-[460px] overflow-hidden gold-border group will-animate animate-fade-up animate-delay-2">
+                    <img src="py (13).jpg" class="absolute w-full h-full object-cover object-center group-hover:scale-105 transition duration-700 ease-out opacity-85">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-7 left-7 z-10">
+                        <p class="text-[10px] tracking-[0.3em] uppercase text-[#bf953f]">Heritage</p>
+                        <h5 class="serif text-2xl italic">Antwerp cut · Abuja soul</h5>
+                    </div>
+                </div>
+                <div class="relative h-[460px] overflow-hidden gold-border group will-animate animate-fade-up animate-delay-3">
+                    <img src="py (5).jpg" class="absolute w-full h-full object-cover object-center group-hover:scale-105 transition duration-700 opacity-85">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute bottom-7 left-7 z-10">
+                        <p class="text-[10px] tracking-[0.3em] uppercase text-[#bf953f]">Signature Service</p>
+                        <h5 class="serif text-2xl italic">Bespoke <span class="not-italic">Concierge</span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12 will-animate animate-fade-up animate-delay-4">
+                <p class="text-[10px] tracking-[0.6em] uppercase text-white/30">— Private gallery open by appointment —</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black py-28 border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <div class="relative inline-block mb-6 will-animate animate-fade-up animate-delay-2">
+                <div class="absolute inset-0 blur-2xl bg-[#bf953f]/10 rounded-full"></div>
+                <span class="relative text-[10px] tracking-[0.5em] uppercase text-[#bf953f]">Begin your bespoke narrative</span>
+            </div>
+            <h3 class="serif text-5xl md:text-7xl font-light italic mb-8 will-animate animate-fade-up animate-delay-3">crafted for those <br> who notice every detail</h3>
+            <p class="text-white/40 max-w-md mx-auto text-sm leading-relaxed mb-10 will-animate animate-fade-up animate-delay-4">Experience the maison’s world: exceptional gems, confidential service, and the quiet thrill of a commission designed for eternity.</p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#" class="group relative px-10 py-4 gold-border overflow-hidden transition-all hover:bg-white hover:text-black will-animate animate-zoom-in animate-delay-2">
+                    <span class="relative z-10 text-[10px] uppercase tracking-[0.3em] font-semibold">Request an atelier visit</span>
+                </a>
+                <a href="#" class="px-10 py-4 border border-white/20 text-[10px] uppercase tracking-[0.3em] hover:border-[#bf953f] transition duration-300 will-animate animate-zoom-in animate-delay-3">
+                    Discover collections
+                </a>
+            </div>
+            <div class="mt-14 flex justify-center gap-4 text-[9px] tracking-widest text-white/20 will-animate animate-fade-up animate-delay-4">
+                <span>Cartier’s rival? No — we are simply Mark Christopher.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/90 border-t border-white/10 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 will-animate animate-fade-up animate-delay-3">
+            <div class="flex items-center gap-4">
+                <img style="height: 2rem;" src="py (1).jpg" alt="mark christopher">
+                <span class="text-[9px] tracking-[0.4em] uppercase text-white/30">Mark Christopher Ltd</span>
+            </div>
+            <div class="flex gap-8 text-[9px] tracking-[0.2em] uppercase text-white/30">
+                <a href="#" class="hover:text-white/80">Privacy</a>
+                <a href="#" class="hover:text-white/80">Ethics</a>
+                <a href="#" class="hover:text-white/80">Press</a>
+                <a href="#" class="hover:text-white/80">Client Care</a>
+            </div>
+            <div class="text-[8px] tracking-wider text-white/20">
+                © MMXXV — Bespoke Fine Jewelry
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.will-animate').forEach(element => {
+                observer.observe(element);
+            });
+
+            document.querySelectorAll('a[href="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Navigate to full site sections - immersive experience');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
